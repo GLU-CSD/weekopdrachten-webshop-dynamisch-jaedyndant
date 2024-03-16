@@ -19,7 +19,7 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
-  <!-- <link rel="icon" href="./favicon.ico" sizes="any"> -->
+  
   <link rel="apple-touch-icon" href="icon.png">
 
   <meta name="theme-color" content="#fafafa">
@@ -29,40 +29,40 @@
 
 
 
-
-  <div class="header">
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <img src="assets/img/img/Shopee_Img/images/logowhite.png" width="200">
-        </div>
-        <nav>
-          <ul id="MenuItems">
-            <li><a href="">Home</a></li>
-            <li><a
-                href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/products.html">Products</a>
-            </li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Account</a></li>
-          </ul>
-        </nav>
-        <img
-          href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.html"
-          src="assets/img/img/Shopee_Img/images/cart.png" width="30" height="30">
-        <img src="assets/img/img/Shopee/images/menu.png" class="menu-icon" onclick="togglemenu()"> <!--docent vraag-->
-      </div>
-      <div class="row">
-        <div class="col-2">
-          <h1>Infuse New Life <br> into Your Wardrobe!</h1>
-          <p>Embrace Your Style Evolution<br> Transform Your Wardrobe for Inspired Self-Expression!</p>
-          <a href="" class="btn">Explore Now &#8594;</a>
-        </div>
-        <div class="col-2">
-          <img src="assets/img/img/Shopee_Img/images/dunk.jpg">
-        </div>
-      </div>
+  <header>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="assets/img/img/Shopee_Img/images/logowhite.png" width="200">
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="">Home</a></li>
+              <li><a
+                  href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/products.html">Products</a>
+              </li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Account</a></li>
+            </ul>
+          </nav>
+  </header>
+  <img href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.html"
+    src="assets/img/img/Shopee_Img/images/cart.png" width="30" height="30">
+  <img src="assets/img/img/Shopee/images/menu.png" class="menu-icon" onclick="togglemenu()"> <!--docent vraag-->
+  </div>
+  <div class="row">
+    <div class="col-2">
+      <h1>Infuse New Life <br> into Your Wardrobe!</h1>
+      <p>Embrace Your Style Evolution<br> Transform Your Wardrobe for Inspired Self-Expression!</p>
+      <a href="" class="btn">Explore Now &#8594;</a>
     </div>
+    <div class="col-2">
+      <img src="assets/img/img/Shopee_Img/images/dunk.jpg">
+    </div>
+  </div>
+  </div>
   </div>
 
   <!----------------side bar-->
@@ -205,7 +205,7 @@
       <p>$85.99</p>
     </div>
     <div class="col-4">
-      <img src="assets/img/img/Shopee_Img/images/product7.jpg"alt>
+      <img src="assets/img/img/Shopee_Img/images/product7.jpg" alt>
       <h4>Casio G-Shock Bluetooth Horloge GBD-200UU-1ER</h4>
       <div class="rating">
         <i class="fa-solid fa-star"></i>
@@ -218,7 +218,7 @@
   </div>
   <div class="row">
     <div class="col-4">
-      <img src="assets/img/img/Shopee_Img/images/product9.jpg" alt="Travis Scott x Air Jordan 1 Low "Tiffany"">
+      <img src="assets/img/img/Shopee_Img/images/product9.jpg" alt="Travis Scott x Air Jordan 1 Low " Tiffany"">
       <h4>Travis Scott x Air Jordan 1 Low "Tiffany"</h4>
       <div class="rating">
         <i class="fa-solid fa-star"></i>
@@ -401,7 +401,7 @@
           <ul>
             <li>Facebook</li>
             <li>Twitter</li>
-         white !important; <li>Instagram</li>
+            white !important; <li>Instagram</li>
             <li>Youtube</li>
           </ul>
         </div>
@@ -410,6 +410,7 @@
     <hr>
     <p class="copyright">Copyright 2024 - Jaedyn Trinidad</p>
   </div>
+  
 
   <!----------------------------------------------------------------js Toggle menu--------------->
   <script>
@@ -444,6 +445,7 @@
 
 
   </script>
+
 
 </body>
 
