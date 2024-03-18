@@ -23,7 +23,7 @@
         <nav>
           <ul>
             <li><a
-                href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.html"><img
+                href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.php"><img
                   src="assets/img/img/Shopee_Img/images/logoblack.png" width="200" alt="logo"></a></li>
           </ul>
         </nav>
@@ -31,10 +31,10 @@
       <nav>
         <ul id="MenuItems">
           <li><a
-              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.html">Home</a>
+              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.php">Home</a>
           </li>
           <li><a
-              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/products.html">Products</a>
+              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/products.php">Products</a>
           </li>
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
@@ -42,7 +42,7 @@
         </ul>
       </nav>
       <img
-        href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.html"
+        href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.php"
         src="assets/img/img/Shopee_Img/images/cart.png" width="30" height="30">
       <img src="assets/img/img/Shopee_Img/images/menu.png" class="menu-icon" onclick="menutoggle()">
     </div>

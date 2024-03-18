@@ -152,6 +152,10 @@
 
     <?php include 'Templates/footer.php'; ?>
    
+    
+    
+     <!------java scripts------------------------------>
+
     <script>
         function menutoggle() {
             var MenuItems = document.getElementById("MenuItems");
