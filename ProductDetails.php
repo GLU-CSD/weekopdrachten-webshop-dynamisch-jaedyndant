@@ -37,7 +37,7 @@
         <nav>
           <ul>
             <li><a
-                href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.html"><img
+                href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.php"><img
                   src="assets/img/img/Shopee_Img/images/logoblack.png" width="200" al></a></li>
           </ul>
         </nav>
@@ -45,10 +45,10 @@
       <nav>
         <ul id="MenuItems">
           <li><a
-              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.html">Home</a>
+              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.php">Home</a>
           </li>
           <li><a
-              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/products.html">Products</a>
+              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/products.php">Products</a>
           </li>
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
@@ -56,7 +56,7 @@
         </ul>
       </nav>
       <img
-        href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.html"
+        href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.php"
         src="assets/img/img/Shopee_Img/images/cart.png" width="30" height="30">
       <img src="assets/img/img/Shopee_Img/images/menu.png" class="menu-icon" onclick="menutoggle()">
       <!--docent vraag-->
@@ -92,7 +92,7 @@
           <option>43 EUR</option>
         </select>
         <input type="number" value="1">
-        <a href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.html"
+        <a href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.php"
           Class="btn"> Add To Cart</a>
 
         <h3>Product Details <i class="fa fa-indent"></i></h3>
@@ -167,49 +167,7 @@
     </div>
   </div>
   <!--------------------footer---------->
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="footer-col-1">
-          <h3>Download Our App</h3>
-          <p>Download App for Android and IOS.</p>
-          <div class="app-logo">
-            <img src="assets/img/img/Shopee_Img/images/play-store.png">
-            <img src="assets/img/img/Shopee_Img/images/app-store.png">
-          </div>
-        </div>
-        <div class="footer-col-2">
-          <ul>
-            <li><a
-                href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.html"><img
-                  src="assets/img/img/Shopee_Img/images/logoblack.png" width="200" al></a></li>
-          </ul>
-          <p>Our aim is to responsibly enhance the joy and advantages of refining your wardrobe, making it more
-            accessible to all.</p>
-        </div>
-        <div class="footer-col-3">
-          <h3>Useful Links</h3>
-          <ul>
-            <li>Coupons</li>
-            <li>Blog Post</li>
-            <li>Return Policy</li>
-            <li>Join Affiliate</li>
-          </ul>
-        </div>
-        <div class="footer-col-4">
-          <h3>Follow us</h3>
-          <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Youtube</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <p class="copyright">Copyright 2024 - Jaedyn Trinidad</p>
-  </div>
+  <?php include 'Templates/footer.php'; ?>
 
   <!----------------------------------------------------------------js Toggle menu--------------->
   <script>

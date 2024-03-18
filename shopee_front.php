@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -27,29 +29,9 @@
 
 <body>
 
+<?php include 'Templates/header.php'; ?>
 
-
-  <header>
-    <div class="header">
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <img src="assets/img/img/Shopee_Img/images/logowhite.png" width="200">
-          </div>
-          <nav>
-            <ul id="MenuItems">
-              <li><a href="">Home</a></li>
-              <li><a
-                  href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/products.html">Products</a>
-              </li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
-              <li><a href="">Account</a></li>
-            </ul>
-          </nav>
-  </header>
-  <img href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.html"
-    src="assets/img/img/Shopee_Img/images/cart.png" width="30" height="30">
+<img href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.php" src="assets/img/img/Shopee_Img/images/cart.png" width="30" height="30">
   <img src="assets/img/img/Shopee/images/menu.png" class="menu-icon" onclick="togglemenu()"> <!--docent vraag-->
   </div>
   <div class="row">
@@ -64,6 +46,7 @@
   </div>
   </div>
   </div>
+ 
 
   <!----------------side bar-->
   <div id="mySidebar" class="sidebar">
@@ -113,7 +96,7 @@
       <div class="col-4">
         <ul>
           <li><a
-              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/ProductDetails.html"><img
+              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/ProductDetails.php"><img
                 src="assets/img/img/Shopee_Img/images/product1.jpg"></a></li>
         </ul>
         <h4>Nike SB Pigeon Dunks</h4>
@@ -366,50 +349,7 @@
 
 
   <!--------------------footer---------->
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="footer-col-1">
-          <h3>Download Our App</h3>
-          <p>Download App for Android and IOS.</p>
-          <div class="app-logo">
-            <img src="assets/img/img/Shopee_Img/images/play-store.png">
-            <img src="assets/img/img/Shopee_Img/images/app-store.png">
-          </div>
-        </div>
-        <div class="footer-col-2">
-          <ul>
-            <li><a
-                href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.html"><img
-                  src="assets/img/img/Shopee_Img/images/logoblack.png" width="200" al></a></li>
-          </ul>
-
-          <p>Our aim is to responsibly enhance the joy and advantages of refining your wardrobe, making it more
-            accessible to all.</p>
-        </div>
-        <div class="footer-col-3">
-          <h3>Useful Links</h3>
-          <ul>
-            <li>Coupons</li>
-            <li>Blog Post</li>
-            <li>Return Policy</li>
-            <li>Join Affiliate</li>
-          </ul>
-        </div>
-        <div class="footer-col-4">
-          <h3>Follow us</h3>
-          <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            white !important; <li>Instagram</li>
-            <li>Youtube</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <p class="copyright">Copyright 2024 - Jaedyn Trinidad</p>
-  </div>
+ <?php include 'Templates/footer.php'; ?>
   
 
   <!----------------------------------------------------------------js Toggle menu--------------->

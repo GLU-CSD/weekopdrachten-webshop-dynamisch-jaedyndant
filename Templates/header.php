@@ -38,7 +38,7 @@
           <nav>
             <ul id="MenuItems">
               <li><a href="">Home</a></li>
-              <li><a href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/products.html">Products</a>
+              <li><a href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/products.php">Products</a>
               </li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
@@ -46,18 +46,4 @@
             </ul>
           </nav>
   </header>
-  <img href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.html" src="assets/img/img/Shopee_Img/images/cart.png" width="30" height="30">
-  <img src="assets/img/img/Shopee/images/menu.png" class="menu-icon" onclick="togglemenu()"> <!--docent vraag-->
-  </div>
-  <div class="row">
-    <div class="col-2">
-      <h1>Infuse New Life <br> into Your Wardrobe!</h1>
-      <p>Embrace Your Style Evolution<br> Transform Your Wardrobe for Inspired Self-Expression!</p>
-      <a href="" class="btn">Explore Now &#8594;</a>
-    </div>
-    <div class="col-2">
-      <img src="assets/img/img/Shopee_Img/images/dunk.jpg">
-    </div>
-  </div>
-  </div>
-  </div>
+  
