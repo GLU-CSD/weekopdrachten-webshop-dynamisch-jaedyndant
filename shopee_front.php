@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -21,7 +19,7 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
-  
+
   <link rel="apple-touch-icon" href="icon.png">
 
   <meta name="theme-color" content="#fafafa">
@@ -29,9 +27,9 @@
 
 <body>
 
-<?php include 'Templates/header.php'; ?>
+  <?php include 'Templates/header.php'; ?>
 
-<img href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.php" src="assets/img/img/Shopee_Img/images/cart.png" width="30" height="30">
+  <img href="shopee_cart.php" src="assets/img/img/Shopee_Img/images/cart.png" width="30" height="30">
   <img src="assets/img/img/Shopee/images/menu.png" class="menu-icon" onclick="togglemenu()"> <!--docent vraag-->
   </div>
   <div class="row">
@@ -46,7 +44,7 @@
   </div>
   </div>
   </div>
- 
+
 
   <!----------------side bar-->
   <div id="mySidebar" class="sidebar">
@@ -90,162 +88,138 @@
 
 
   <!--------------------------featured products--------------------------------->
+
+  <?php
+
+  $featured_products = array(
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product1.jpg',
+      'name' => 'Nike SB Pigeon Dunks',
+      'rating' => 4.5,
+      'price' => 799.99,
+      'id' => '101',
+    ),
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product2.jpg',
+      'name' => 'Jordan 1 Low Travis Scott Black Phantom',
+      'rating' => 5,
+      'price' => 559.99,
+      'id' => '102',
+    ),
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product3.jpg',
+      'name' => 'Nike SB Dunk Low Mummy Halloween',
+      'rating' => 4,
+      'price' => 335.99,
+      'id' => '103',
+    ),
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product4.jpg',
+      'name' => 'Jordan 1 Low Travis Scott Reverse Mocha',
+      'rating' => 4.5,
+      'price' => 1099.99,
+      'id' => '104',
+    )
+  );
+
+  $latest_products = array(
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product5.jpg',
+      'name' => 'Jordan 4 Retro White Cement (2016)',
+      'rating' => 4.5,
+      'price' => 449.99,
+      'id' => '105',
+    ),
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product6.jpg',
+      'name' => 'Nike Everyday Plus Lightweight Crew Socks',
+      'rating' => 5,
+      'price' => 13.99,
+      'id' => '106',
+    ),
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product8.jpg',
+      'name' => 'G-Shock DW-5600BB-1ER - Black',
+      'rating' => 4,
+      'price' => 85.99,
+      'id' => '107',
+    ),
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product7.jpg',
+      'name' => 'Casio G-Shock Bluetooth Horloge GBD-200UU-1ER',
+      'rating' => 4.5,
+      'price' => 149.99,
+      'id' => '108',
+    ),
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product9.jpg',
+      'name' => 'Travis Scott x Air Jordan 1 Low "Tiffany"',
+      'rating' => 4.5,
+      'price' => 699.99,
+      'id' => '109',
+    ),
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product10.jpg',
+      'name' => 'CIRCUS MAXIMUS TRAVIS SCOTT',
+      'rating' => 5,
+      'price' => 29.99,
+      'id' => '110',
+    ),
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product11.jpg',
+      'name' => 'Darkbuck® Travis Scott Rapper Oversized T Shirt',
+      'rating' => 4,
+      'price' => 29.99,
+      'id' => '111',
+    ),
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product12.jpg',
+      'name' => 'Nike Air Jordan Travis Scott Flight SS Tee Black',
+      'rating' => 4.5,
+      'price' => 129.99,
+      'id' => '112',
+    )
+  );
+
+  ?>
+
   <div class="small-container">
     <h2 class="title">Featured Products</h2>
     <div class="row">
-      <div class="col-4">
-        <ul>
-          <li><a
-              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/ProductDetails.php"><img
-                src="assets/img/img/Shopee_Img/images/product1.jpg"></a></li>
-        </ul>
-        <h4>Nike SB Pigeon Dunks</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-
-        </div>
-        <p>$799.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product2.jpg">
-        <h4>Jordan 1 Low Travis Scott Black Phantom</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$559.99</p>
-      </div>
-
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product3.jpg">
-        <h4>Nike SB Dunk Low Mummy Halloween</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$335.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product4.jpg">
-        <h4>Jordan 1 Low Travis Scott Reverse Mocha</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$1099.99</p>
-      </div>
-
+      <?php foreach ($featured_products as $product) : ?>
+        <a href="ProductDetails.php?id=<?php echo $product['id'] ?>">
+          <div class="col-4">
+            <img src="<?php echo $product['image']; ?>">
+            <h4><?php echo $product['name']; ?></h4>
+            <div class="rating">
+              <?php for ($i = 0; $i < $product['rating']; $i++) : ?>
+                <i class="fa-solid fa-star"></i>
+              <?php endfor; ?>
+            </div>
+            <p>$<?php echo $product['price']; ?></p>
+          </div>
+        </a>
+      <?php endforeach; ?>
     </div>
+  </div>
+
+  <div class="small-container">
     <h2 class="title">Latest Products</h2>
-  </div>
-  <div class="row">
-    <div class="col-4">
-      <img src="assets/img/img/Shopee_Img/images/product5.jpg">
-      <h4>Jordan 4 Retro White Cement (2016)</h4>
-      <div class="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star-half"></i>
-      </div>
-      <p>$449.99</p>
-    </div>
-    <div class="col-4">
-      <img src="assets/img/img/Shopee_Img/images/product6.jpg">
-      <h4>Nike Everyday Plus Lightweight
-        Crew Socks</h4>
-      <div class="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-      <p>$13.99</p>
-    </div>
-
-    <div class="col-4">
-      <img src="assets/img/img/Shopee_Img/images/product8.jpg">
-      <h4>G-Shock DW-5600BB-1ER - Black</h4>
-      <div class="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-      <p>$85.99</p>
-    </div>
-    <div class="col-4">
-      <img src="assets/img/img/Shopee_Img/images/product7.jpg" alt>
-      <h4>Casio G-Shock Bluetooth Horloge GBD-200UU-1ER</h4>
-      <div class="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star-half"></i>
-      </div>
-      <p>$149.99</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-4">
-      <img src="assets/img/img/Shopee_Img/images/product9.jpg" alt="Travis Scott x Air Jordan 1 Low " Tiffany"">
-      <h4>Travis Scott x Air Jordan 1 Low "Tiffany"</h4>
-      <div class="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star-half"></i>
-      </div>
-      <p>$699.99</p>
-    </div>
-    <div class="col-4">
-      <img src="assets/img/img/Shopee_Img/images/product10.jpg" alt="CIRCUS MAXIMUS TRAVIS SCOTT">
-      <h4>CIRCUS MAXIMUS TRAVIS SCOTT</h4>
-      <div class="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-      <p>$29.99</p>
-    </div>
-
-    <div class="col-4">
-      <img src="assets/img/img/Shopee_Img/images/product11.jpg" alt="Darkbuck® Travis Scott Rapper Oversized T Shirt">
-      <h4>Darkbuck® Travis Scott Rapper Oversized T Shirt</h4>
-      <div class="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-      </div>
-      <p>$29.99</p>
-    </div>
-    <div class="col-4">
-      <img src="assets/img/img/Shopee_Img/images/product12.jpg" alt="Nike Air Jordan Travis Scott Flight SS Tee Black">
-      <h4>Nike Air Jordan Travis Scott Flight SS Tee Black</h4>
-      <div class="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star-half"></i>
-      </div>
-      <p>$129.99</p>
+    <div class="row">
+      <?php foreach ($latest_products as $product) : ?>
+        <a href="ProductDetails.php?id=<?php echo $product['id'] ?>">
+          <div class="col-4">
+            <img src="<?php echo $product['image']; ?>">
+            <h4><?php echo $product['name']; ?></h4>
+            <div class="rating">
+              <?php for ($i = 0; $i < $product['rating']; $i++) : ?>
+                <i class="fa-solid fa-star"></i>
+              <?php endfor; ?>
+            </div>
+            <p>$<?php echo $product['price']; ?></p>
+          </div>
+        </a>
+      <?php endforeach; ?>
     </div>
   </div>
 
@@ -349,22 +323,17 @@
 
 
   <!--------------------footer---------->
- <?php include 'Templates/footer.php'; ?>
-  
+  <?php include 'Templates/footer.php'; ?>
+
 
   <!----------------------------------------------------------------js Toggle menu--------------->
   <script>
-
-
-
-
     function menutoggle() {
       var MenuItems = document.getElementById("MenuItems");
       console.log("menutoggle")
       if (MenuItems.style.maxHeight == "0") {
         MenuItems.style.maxHeight = "200";
-      }
-      else {
+      } else {
         MenuItems.style.maxHeight = "0";
       }
 
@@ -380,10 +349,6 @@
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
     }
-
-
-
-
   </script>
 
 

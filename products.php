@@ -23,7 +23,7 @@
 
         <ul>
           <li><a
-              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/ProductDetails.php"><img
+              href="ProductDetails.php"><img
                 src="assets/img/img/Shopee_Img/images/product1.jpg"></a></li>
         </ul>
 

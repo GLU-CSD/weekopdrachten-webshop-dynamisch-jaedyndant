@@ -12,7 +12,7 @@
         <div class="footer-col-2">
           <ul>
             <li><a
-                href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.php"><img
+                href="shopee_front.php"><img
                   src="assets/img/img/Shopee_Img/images/logoblack.png" width="200" al></a></li>
           </ul>
 

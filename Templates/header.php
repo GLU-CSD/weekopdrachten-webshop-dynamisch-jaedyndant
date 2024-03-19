@@ -37,8 +37,8 @@
           </div>
           <nav>
             <ul id="MenuItems">
-              <li><a href="">Home</a></li>
-              <li><a href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/products.php">Products</a>
+              <li><a href="shopee_front.php"">Home</a></li>
+              <li><a href="products.php">Products</a>
               </li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
