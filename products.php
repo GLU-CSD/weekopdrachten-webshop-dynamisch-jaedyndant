@@ -18,261 +18,172 @@
       </select>
     </div>
 
+   
+        <?php
+
+$all_products = array(
+    array(
+        'image' => 'assets/img/img/Shopee_Img/images/product1.jpg',
+        'name' => 'Nike SB Pigeon Dunks',
+        'rating' => 4.5,
+        'price' => 799.99,
+        'id' => '101',
+    ),
+    array(
+        'image' => 'assets/img/img/Shopee_Img/images/product2.jpg',
+        'name' => 'Jordan 1 Low Travis Scott Black Phantom',
+        'rating' => 5,
+        'price' => 559.99,
+        'id' => '102',
+    ),
+    array(
+        'image' => 'assets/img/img/Shopee_Img/images/product3.jpg',
+        'name' => 'Nike SB Dunk Low Mummy Halloween',
+        'rating' => 4,
+        'price' => 335.99,
+        'id' => '103',
+    ),
+    array(
+        'image' => 'assets/img/img/Shopee_Img/images/product4.jpg',
+        'name' => 'Jordan 1 Low Travis Scott Reverse Mocha',
+        'rating' => 4.5,
+        'price' => 1099.99,
+        'id' => '104',
+    ),
+    array(
+      'image' => 'assets/img/img/Shopee_Img/images/product5.jpg',
+      'name' => 'Jordan 4 Retro White Cement (2016)',
+      'rating' => 4.5,
+      'price' => 449.99,
+      'id' => '105',
+   ),
+   array(
+    'image' => 'assets/img/img/Shopee_Img/images/product6.jpg',
+    'name' => 'Nike Everyday Plus Lightweight Crew Socks',
+    'rating' => 4.5,
+    'price' => 13.99,
+    'id' => '106',
+   ),
+   array(
+    'image' => 'assets/img/img/Shopee_Img/images/product8.jpg',
+    'name' => 'G-Shock DW-5600BB-1ER - Black',
+    'rating' => 4.5,
+    'price' => 85.99,
+    'id' => '107',
+ ),
+ array(
+  'image' => 'assets/img/img/Shopee_Img/images/product7.jpg',
+  'name' => 'Casio G-Shock Bluetooth Horloge GBD-200UU-1ER',
+  'rating' => 4.5,
+  'price' => 149.99,
+  'id' => '108',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product9.jpg',
+  'name' => 'Travis Scott x Air Jordan 1 Low "Tiffany"',
+  'rating' => 4.5,
+  'price' => 699.99,
+  'id' => '109',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product10.jpg',
+  'name' => 'CIRCUS MAXIMUS TRAVIS SCOTT',
+  'rating' => 4.5,
+  'price' => 29.99,
+  'id' => '111',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product11.jpg',
+  'name' => 'Darkbuck® Travis Scott Rapper Oversized T Shirt',
+  'rating' => 4.5,
+  'price' => 29.99,
+  'id' => '112',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product12.jpg',
+  'name' => 'Nike Air Jordan Travis Scott Flight SS Tee Black',
+  'rating' => 4.5,
+  'price' => 129.99,
+  'id' => '113',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product14.jpg',
+  'name' => 'Jordan 4 Retro Military Black',
+  'rating' => 4.5,
+  'price' => 431.99,
+  'id' => '114',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product15.jpg',
+  'name' => 'Jordan 4 Retro Bred (2019)',
+  'rating' => 4.5,
+  'price' => 463.99,
+  'id' => '115',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product16.jpg',
+  'name' => 'Jordan 1 x Travis Scott Low Mocha',
+  'rating' => 4.5,
+  'price' => 1957.99,
+  'id' => '116',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product17.jpg',
+  'name' => 'Jordan Jumpman Jack TR Travis Scott Sail',
+  'rating' => 4.5,
+  'price' => 199.99,
+  'id' => '117',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product18.jpg',
+  'name' => 'Nike SB Dunk Low Staple Panda Pigeon',
+  'rating' => 4.5,
+  'price' => 1156.99,
+  'id' => '118',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product19.jpg',
+  'name' => 'Jordan 4 Retro Off-White Sail',
+  'rating' => 4.5,
+  'price' => 1156.99,
+  'id' => '119',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product20.jpg',
+  'name' => 'Grey Carhartt WIP Regular Cargo Pants',
+  'rating' => 4.5,
+  'price' => 29.99,
+  'id' => '120',
+),
+array(
+  'image' => 'assets/img/img/Shopee_Img/images/product21.jpg',
+  'name' => 'Olive Carhartt WIP Regular Cargo Pants',
+  'rating' => 4.5,
+  'price' => 39.99,
+  'id' => '121',
+),
+
+);
+
+?>
+
+
     <div class="row">
-      <div class="col-4">
-
-        <ul>
-          <li><a
-              href="ProductDetails.php"><img
-                src="assets/img/img/Shopee_Img/images/product1.jpg"></a></li>
-        </ul>
-
-        <h4>Nike SB Pigeon Dunks</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$799.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product2.jpg" alt="Jordan 1 Low Travis Scott Black Phantom">
-        <h4>Jordan 1 Low Travis Scott Black Phantom</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$559.99</p>
-      </div>
-
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product3.jpg" alt="Nike SB Dunk Low Mummy Halloween">
-        <h4>Nike SB Dunk Low Mummy Halloween</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$335.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product4.jpg" alt="Jordan 1 Low Travis Scott Reverse Mocha">
-        <h4>Jordan 1 Low Travis Scott Reverse Mocha</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$1099.99</p>
-      </div>
-
+      <?php foreach ($all_products as $product) : ?>
+        <a href="ProductDetails.php?id=<?php echo $product['id'] ?>">
+          <div class="col-4">
+            <img src="<?php echo $product['image']; ?>">
+            <h4><?php echo $product['name']; ?></h4>
+            <div class="rating">
+              <?php for ($i = 0; $i < $product['rating']; $i++) : ?>
+                <i class="fa-solid fa-star"></i>
+              <?php endfor; ?>
+            </div>
+            <p>$<?php echo $product['price']; ?></p>
+          </div>
+        </a>
+      <?php endforeach; ?>
     </div>
-    <div class="row">
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product5.jpg" alt="Jordan 4 Retro White Cement (2016)">
-        <h4>Jordan 4 Retro White Cement (2016)</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$449.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product6.jpg" alt="Nike Everyday Plus Lightweight Crew Socks">
-        <h4>Nike Everyday Plus Lightweight Crew Socks</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$13.99</p>
-      </div>
-
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product8.jpg" alt="G-Shock DW-5600BB-1ER - Black">
-        <h4>G-Shock DW-5600BB-1ER - Black</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$85.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product7.jpg" alt="Casio G-Shock Bluetooth Horloge GBD-200UU-1ER">
-        <h4>Casio G-Shock Bluetooth Horloge GBD-200UU-1ER</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$149.99</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product9.jpg" alt="Travis Scott x Air Jordan 1 Low " Tiffany"">
-        <h4>Travis Scott x Air Jordan 1 Low "Tiffany"</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$699.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product10.jpg" alt="CIRCUS MAXIMUS TRAVIS SCOTT">
-        <h4>CIRCUS MAXIMUS TRAVIS SCOTT</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$29.99</p>
-      </div>
-
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product11.jpg" alt="Darkbuck® Travis Scott Rapper Oversized T Shirt">
-        <h4>Darkbuck® Travis Scott Rapper Oversized T Shirt</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$29.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product12.jpg"
-          alt="Nike Air Jordan Travis Scott Flight SS Tee Black">
-        <h4>Nike Air Jordan Travis Scott Flight SS Tee Black</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$129.99</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product14.jpg" alt="Jordan 4 Retro Military Black">
-        <h4>Jordan 4 Retro Military Black"</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$431.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product15.jpg" alt="Jordan 4 Retro Bred (2019)">
-        <h4>Jordan 4 Retro Bred (2019)</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$463.99</p>
-      </div>
-
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product16.jpg" alt="Jordan 1 x Travis Scott Low Mocha">
-        <h4>Jordan 1 x Travis Scott Low Mocha</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$1957.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product17.jpg" alt="Jordan Jumpman Jack TR Travis Scott Sail">
-        <h4>Jordan Jumpman Jack TR Travis Scott Sail</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$199.99</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product18.jpg" alt="Nike SB Dunk Low Staple Panda Pigeon">
-        <h4>Nike SB Dunk Low Staple Panda Pigeon</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$806.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product19.jpg" alt="Jordan 4 Retro Off-White Sail">
-        <h4>Jordan 4 Retro Off-White Sail</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$1156.99</p>
-      </div>
-
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product20.jpg" alt="Grey Carhartt WIP Regular Cargo Pants">
-        <h4>Grey Carhartt WIP Regular Cargo Pants</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <p>$29.99</p>
-      </div>
-      <div class="col-4">
-        <img src="assets/img/img/Shopee_Img/images/product21.jpg" alt="Olive Carhartt WIP Regular Cargo Pants">
-        <h4>Olive Carhartt WIP Regular Cargo Pants</h4>
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$39.99</p>
-      </div>
-    </div>
-  </div>
-  </div>
   </div>
 
 
