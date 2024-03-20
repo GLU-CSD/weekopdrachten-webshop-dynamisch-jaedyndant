@@ -2,6 +2,7 @@
 <html class="no-js" lang="">
 
 <?php include 'Templates/header.php'; ?>
+
 <body>
 
   <div class="small-container">
@@ -18,172 +19,175 @@
       </select>
     </div>
 
-   
-        <?php
 
-$all_products = array(
-    array(
+    <?php
+
+    $all_products = array(
+      array(
         'image' => 'assets/img/img/Shopee_Img/images/product1.jpg',
         'name' => 'Nike SB Pigeon Dunks',
         'rating' => 4.5,
         'price' => 799.99,
         'id' => '101',
-    ),
-    array(
+      ),
+      array(
         'image' => 'assets/img/img/Shopee_Img/images/product2.jpg',
         'name' => 'Jordan 1 Low Travis Scott Black Phantom',
         'rating' => 5,
         'price' => 559.99,
         'id' => '102',
-    ),
-    array(
+      ),
+      array(
         'image' => 'assets/img/img/Shopee_Img/images/product3.jpg',
         'name' => 'Nike SB Dunk Low Mummy Halloween',
         'rating' => 4,
         'price' => 335.99,
         'id' => '103',
-    ),
-    array(
+      ),
+      array(
         'image' => 'assets/img/img/Shopee_Img/images/product4.jpg',
         'name' => 'Jordan 1 Low Travis Scott Reverse Mocha',
         'rating' => 4.5,
         'price' => 1099.99,
         'id' => '104',
-    ),
-    array(
-      'image' => 'assets/img/img/Shopee_Img/images/product5.jpg',
-      'name' => 'Jordan 4 Retro White Cement (2016)',
-      'rating' => 4.5,
-      'price' => 449.99,
-      'id' => '105',
-   ),
-   array(
-    'image' => 'assets/img/img/Shopee_Img/images/product6.jpg',
-    'name' => 'Nike Everyday Plus Lightweight Crew Socks',
-    'rating' => 4.5,
-    'price' => 13.99,
-    'id' => '106',
-   ),
-   array(
-    'image' => 'assets/img/img/Shopee_Img/images/product8.jpg',
-    'name' => 'G-Shock DW-5600BB-1ER - Black',
-    'rating' => 4.5,
-    'price' => 85.99,
-    'id' => '107',
- ),
- array(
-  'image' => 'assets/img/img/Shopee_Img/images/product7.jpg',
-  'name' => 'Casio G-Shock Bluetooth Horloge GBD-200UU-1ER',
-  'rating' => 4.5,
-  'price' => 149.99,
-  'id' => '108',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product9.jpg',
-  'name' => 'Travis Scott x Air Jordan 1 Low "Tiffany"',
-  'rating' => 4.5,
-  'price' => 699.99,
-  'id' => '109',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product10.jpg',
-  'name' => 'CIRCUS MAXIMUS TRAVIS SCOTT',
-  'rating' => 4.5,
-  'price' => 29.99,
-  'id' => '111',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product11.jpg',
-  'name' => 'Darkbuck® Travis Scott Rapper Oversized T Shirt',
-  'rating' => 4.5,
-  'price' => 29.99,
-  'id' => '112',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product12.jpg',
-  'name' => 'Nike Air Jordan Travis Scott Flight SS Tee Black',
-  'rating' => 4.5,
-  'price' => 129.99,
-  'id' => '113',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product14.jpg',
-  'name' => 'Jordan 4 Retro Military Black',
-  'rating' => 4.5,
-  'price' => 431.99,
-  'id' => '114',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product15.jpg',
-  'name' => 'Jordan 4 Retro Bred (2019)',
-  'rating' => 4.5,
-  'price' => 463.99,
-  'id' => '115',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product16.jpg',
-  'name' => 'Jordan 1 x Travis Scott Low Mocha',
-  'rating' => 4.5,
-  'price' => 1957.99,
-  'id' => '116',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product17.jpg',
-  'name' => 'Jordan Jumpman Jack TR Travis Scott Sail',
-  'rating' => 4.5,
-  'price' => 199.99,
-  'id' => '117',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product18.jpg',
-  'name' => 'Nike SB Dunk Low Staple Panda Pigeon',
-  'rating' => 4.5,
-  'price' => 1156.99,
-  'id' => '118',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product19.jpg',
-  'name' => 'Jordan 4 Retro Off-White Sail',
-  'rating' => 4.5,
-  'price' => 1156.99,
-  'id' => '119',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product20.jpg',
-  'name' => 'Grey Carhartt WIP Regular Cargo Pants',
-  'rating' => 4.5,
-  'price' => 29.99,
-  'id' => '120',
-),
-array(
-  'image' => 'assets/img/img/Shopee_Img/images/product21.jpg',
-  'name' => 'Olive Carhartt WIP Regular Cargo Pants',
-  'rating' => 4.5,
-  'price' => 39.99,
-  'id' => '121',
-),
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product5.jpg',
+        'name' => 'Jordan 4 Retro White Cement (2016)',
+        'rating' => 4.5,
+        'price' => 449.99,
+        'id' => '105',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product6.jpg',
+        'name' => 'Nike Everyday Plus Lightweight Crew Socks',
+        'rating' => 4.5,
+        'price' => 13.99,
+        'id' => '106',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product8.jpg',
+        'name' => 'G-Shock DW-5600BB-1ER - Black',
+        'rating' => 4.5,
+        'price' => 85.99,
+        'id' => '107',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product7.jpg',
+        'name' => 'Casio G-Shock Bluetooth Horloge GBD-200UU-1ER',
+        'rating' => 4.5,
+        'price' => 149.99,
+        'id' => '108',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product9.jpg',
+        'name' => 'Travis Scott x Air Jordan 1 Low "Tiffany"',
+        'rating' => 4.5,
+        'price' => 699.99,
+        'id' => '109',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product10.jpg',
+        'name' => 'CIRCUS MAXIMUS TRAVIS SCOTT',
+        'rating' => 4.5,
+        'price' => 29.99,
+        'id' => '111',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product11.jpg',
+        'name' => 'Darkbuck® Travis Scott Rapper Oversized T Shirt',
+        'rating' => 4.5,
+        'price' => 29.99,
+        'id' => '112',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product12.jpg',
+        'name' => 'Nike Air Jordan Travis Scott Flight SS Tee Black',
+        'rating' => 4.5,
+        'price' => 129.99,
+        'id' => '113',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product14.jpg',
+        'name' => 'Jordan 4 Retro Military Black',
+        'rating' => 4.5,
+        'price' => 431.99,
+        'id' => '114',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product15.jpg',
+        'name' => 'Jordan 4 Retro Bred (2019)',
+        'rating' => 4.5,
+        'price' => 463.99,
+        'id' => '115',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product16.jpg',
+        'name' => 'Jordan 1 x Travis Scott Low Mocha',
+        'rating' => 4.5,
+        'price' => 1957.99,
+        'id' => '116',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product17.jpg',
+        'name' => 'Jordan Jumpman Jack TR Travis Scott Sail',
+        'rating' => 4.5,
+        'price' => 199.99,
+        'id' => '117',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product18.jpg',
+        'name' => 'Nike SB Dunk Low Staple Panda Pigeon',
+        'rating' => 4.5,
+        'price' => 1156.99,
+        'id' => '118',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product19.jpg',
+        'name' => 'Jordan 4 Retro Off-White Sail',
+        'rating' => 4.5,
+        'price' => 1156.99,
+        'id' => '119',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product20.jpg',
+        'name' => 'Grey Carhartt WIP Regular Cargo Pants',
+        'rating' => 4.5,
+        'price' => 29.99,
+        'id' => '120',
+      ),
+      array(
+        'image' => 'assets/img/img/Shopee_Img/images/product21.jpg',
+        'name' => 'Olive Carhartt WIP Regular Cargo Pants',
+        'rating' => 4.5,
+        'price' => 39.99,
+        'id' => '121',
+      ),
 
-);
+    );
+    ?>
 
-?>
 
 
-    <div class="row">
-      <?php foreach ($all_products as $product) : ?>
-        <a href="ProductDetails.php?id=<?php echo $product['id'] ?>">
-          <div class="col-4">
-            <img src="<?php echo $product['image']; ?>">
-            <h4><?php echo $product['name']; ?></h4>
-            <div class="rating">
-              <?php for ($i = 0; $i < $product['rating']; $i++) : ?>
-                <i class="fa-solid fa-star"></i>
-              <?php endfor; ?>
+   
+
+<!----- products php---->
+      <div class="row">
+        <?php foreach ($all_products as $product) : ?>
+          <a href="ProductDetails.php?id=<?php echo $product['id'] ?>">
+            <div class="col-4">
+              <img src="<?php echo $product['image']; ?>">
+              <h4><?php echo $product['name']; ?></h4>
+              <div class="rating">
+                <?php for ($i = 0; $i < $product['rating']; $i++) : ?>
+                  <i class="fa-solid fa-star"></i>
+                <?php endfor; ?>
+              </div>
+              <p>$<?php echo $product['price']; ?></p>
             </div>
-            <p>$<?php echo $product['price']; ?></p>
-          </div>
-        </a>
-      <?php endforeach; ?>
-    </div>
+          </a>
+        <?php endforeach; ?>
+      </div>
   </div>
 
 
@@ -198,17 +202,15 @@ array(
 
   <!--------------------footer---------->
   <?php include 'Templates/footer.php'; ?>
- 
+
   <!----------------------------------------------------------------js Toggle menu--------------->
   <script>
-    
     function menutoggle() {
       var MenuItems = document.getElementById("MenuItems");
       console.log("menutoggle")
       if (MenuItems.style.maxHeight == "0") {
         MenuItems.style.maxHeight = "200";
-      }
-      else {
+      } else {
         MenuItems.style.maxHeight = "0";
       }
 

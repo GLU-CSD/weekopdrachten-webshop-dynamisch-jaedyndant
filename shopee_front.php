@@ -182,7 +182,7 @@
   );
 
   ?>
-
+<!--------   products php   ------>
   <div class="small-container">
     <h2 class="title">Featured Products</h2>
     <div class="row">

@@ -51,11 +51,7 @@
 
 
 
-  <div class="small-container">
-
-
-
-
+  <div class="small-container">S
     <div class="row">
       <div class="col-4">
         <img src="assets/img/img/Shopee_Img/images/product8.jpg">
