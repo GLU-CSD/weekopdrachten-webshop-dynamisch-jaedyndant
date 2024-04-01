@@ -29,6 +29,9 @@
         'rating' => 4.5,
         'price' => 799.99,
         'id' => '101',
+        'description' => 'The Nike SB Dunk Low "Black Pigeon" was released in 2017 to celebrate the 15th anniversary of the SB Dunk. 
+                          Inspired by the original Pigeon colorway released in 2005, this sneaker was perhaps one of the wildest Nike 
+                          drops in history.',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product2.jpg',
@@ -36,6 +39,7 @@
         'rating' => 5,
         'price' => 559.99,
         'id' => '102',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product3.jpg',
@@ -43,6 +47,7 @@
         'rating' => 4,
         'price' => 335.99,
         'id' => '103',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product4.jpg',
@@ -50,6 +55,7 @@
         'rating' => 4.5,
         'price' => 1099.99,
         'id' => '104',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product5.jpg',
@@ -57,6 +63,7 @@
         'rating' => 4.5,
         'price' => 449.99,
         'id' => '105',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product6.jpg',
@@ -64,6 +71,7 @@
         'rating' => 4.5,
         'price' => 13.99,
         'id' => '106',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product8.jpg',
@@ -71,6 +79,7 @@
         'rating' => 4.5,
         'price' => 85.99,
         'id' => '107',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product7.jpg',
@@ -78,6 +87,7 @@
         'rating' => 4.5,
         'price' => 149.99,
         'id' => '108',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product9.jpg',
@@ -85,6 +95,7 @@
         'rating' => 4.5,
         'price' => 699.99,
         'id' => '109',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product10.jpg',
@@ -92,6 +103,7 @@
         'rating' => 4.5,
         'price' => 29.99,
         'id' => '111',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product11.jpg',
@@ -99,6 +111,7 @@
         'rating' => 4.5,
         'price' => 29.99,
         'id' => '112',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product12.jpg',
@@ -106,6 +119,7 @@
         'rating' => 4.5,
         'price' => 129.99,
         'id' => '113',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product14.jpg',
@@ -113,6 +127,7 @@
         'rating' => 4.5,
         'price' => 431.99,
         'id' => '114',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product15.jpg',
@@ -120,6 +135,7 @@
         'rating' => 4.5,
         'price' => 463.99,
         'id' => '115',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product16.jpg',
@@ -127,6 +143,7 @@
         'rating' => 4.5,
         'price' => 1957.99,
         'id' => '116',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product17.jpg',
@@ -134,6 +151,7 @@
         'rating' => 4.5,
         'price' => 199.99,
         'id' => '117',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product18.jpg',
@@ -141,6 +159,7 @@
         'rating' => 4.5,
         'price' => 1156.99,
         'id' => '118',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product19.jpg',
@@ -148,6 +167,7 @@
         'rating' => 4.5,
         'price' => 1156.99,
         'id' => '119',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product20.jpg',
@@ -155,6 +175,7 @@
         'rating' => 4.5,
         'price' => 29.99,
         'id' => '120',
+        'description' => '',
       ),
       array(
         'image' => 'assets/img/img/Shopee_Img/images/product21.jpg',
@@ -162,32 +183,30 @@
         'rating' => 4.5,
         'price' => 39.99,
         'id' => '121',
+        'description' => '',
       ),
 
     );
     ?>
 
 
-
-   
-
-<!----- products php---->
-      <div class="row">
-        <?php foreach ($all_products as $product) : ?>
-          <a href="ProductDetails.php?id=<?php echo $product['id'] ?>">
-            <div class="col-4">
-              <img src="<?php echo $product['image']; ?>">
-              <h4><?php echo $product['name']; ?></h4>
-              <div class="rating">
-                <?php for ($i = 0; $i < $product['rating']; $i++) : ?>
-                  <i class="fa-solid fa-star"></i>
-                <?php endfor; ?>
-              </div>
-              <p>$<?php echo $product['price']; ?></p>
+    <!----- products php---->
+    <div class="row">
+      <?php foreach ($all_products as $product) : ?>
+        <a href="ProductDetails.php?id=<?php echo $product['id'] ?>">
+          <div class="col-4">
+            <img src="<?php echo $product['image']; ?>">
+            <h4><?php echo $product['name']; ?></h4>
+            <div class="rating">
+              <?php for ($i = 0; $i < $product['rating']; $i++) : ?>
+                <i class="fa-solid fa-star"></i>
+              <?php endfor; ?>
             </div>
-          </a>
-        <?php endforeach; ?>
-      </div>
+            <p>$<?php echo $product['price']; ?></p>
+          </div>
+        </a>
+      <?php endforeach; ?>
+    </div>
   </div>
 
 

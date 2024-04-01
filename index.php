@@ -150,6 +150,7 @@
       'rating' => 4.5,
       'price' => 149.99,
       'id' => '108',
+      
     ),
     array(
       'image' => 'assets/img/img/Shopee_Img/images/product9.jpg',
@@ -182,6 +183,7 @@
   );
 
   ?>
+  
 <!--------   products php   ------>
   <div class="small-container">
     <h2 class="title">Featured Products</h2>
