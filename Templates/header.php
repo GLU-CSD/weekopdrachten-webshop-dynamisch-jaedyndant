@@ -42,8 +42,11 @@
               </li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
-              <li><a href="">Account</a></li>
+              <li><a href="shopee_account.php">Account</a></li>
             </ul>
           </nav>
+          <!------------ shopping cart icon-------->
+          <a href="shopee_cart.php" class="cart"><i class="fa-solid fa-cart-shopping"></i><span><sup>2</sup></span></a>
+          
   </header>
   

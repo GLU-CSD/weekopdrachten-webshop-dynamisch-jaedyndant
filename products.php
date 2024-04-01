@@ -190,6 +190,9 @@
     ?>
 
 
+
+
+
     <!----- products php---->
     <div class="row">
       <?php foreach ($all_products as $product) : ?>

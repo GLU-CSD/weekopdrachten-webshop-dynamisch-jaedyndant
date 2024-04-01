@@ -6,57 +6,38 @@
 <!---------------------single product details-->
 
 <div class="small-container single-product">
-  <?php
-  $currentProductId = isset($_GET['id']) ? intval($_GET['id']) : 1;
-
-  $currentProduct = null;
-  foreach ($all_products as $product) {
-    if ($product['id'] == $currentProductId) {
-      $currentProduct = $product;
-      break;
-    }
-  }
-
-  if ($currentProduct === null) {
-    // Handle error when the product is not found
-    // For example, redirect to an error page or display a message
-    header('Location: error.php');
-    exit;
-  }
-  ?>
-
   <div class="row">
     <div class="col-2">
-      <img src="<?php echo $currentProduct['image']; ?>" width="100%">
+      <img src="assets/img/img/Shopee_Img/images/product1.jpg" width="100%">
     </div>
     <div class="col-2">
-      <a href="ProductDetails.php?id=<?php echo $currentProduct['id'] ?>">
-        <p> Home / Shoes</p>
-        <h1><?php echo $currentProduct['name']; ?></h1>
-        <h4><?php echo $currentProduct['price']; ?></h4>
+      <p> Home / Shoes</p>
+      <h1>Nike SB Pigeon Dunks</h1>
+      <h4>$799.99</h4>
 
-        <select>
-          <option>35 EUR</option>
-          <option>36 EUR</option>
-          <option>37 EUR</option>
-          <option>38 EUR</option>
-          <option>39 EUR</option>
-          <option>40 EUR</option>
-          <option>41 EUR</option>
-          <option>42 EUR</option>
-          <option>43 EUR</option>
-        </select>
-        <input type="number" value="1">
-        <button class="btn"> Add To Cart</button>
+      <select>
+        <option>35 EUR</option>
+        <option>36 EUR</option>
+        <option>37 EUR</option>
+        <option>38 EUR</option>
+        <option>39 EUR</option>
+        <option>40 EUR</option>
+        <option>41 EUR</option>
+        <option>42 EUR</option>
+        <option>43 EUR</option>
+      </select>
+      <input type="number" value="1">
+      <a href="shopee_cart.php" Class="btn"> Add To Cart</a>
 
-        <h3>Product Details <i class="fa fa-indent"></i></h3>
-        <br>
-        <p><?php echo $currentProduct['description']; ?></p>
-      </a>
+      <h3>Product Details <i class="fa fa-indent"></i></h3>
+      <br>
+      <p>The Nike SB Dunk Low "Black Pigeon" was released in 2017 to celebrate the 15th anniversary of the SB Dunk.
+        Inspired by the original Pigeon colorway released in 2005,
+        this sneaker was perhaps one of the wildest
+        Nike drops in history. </p>
     </div>
   </div>
 </div>
-
 
 <?php
 

@@ -1,74 +1,101 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    include 'connect.php';
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopee | Product Details</title>
-  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/1232e6a3df.js" crossorigin="anonymous"></script>
-  <meta name="description" content="">
-  <link rel="apple-touch-icon" href="icon.png">
-  <meta name="theme-color" content="#fafafa">
-</head>
+    $sql = "INSERT INTO registration (username, password) VALUES ('$username', '$password')";
+    $result = mysqli_query($con, $sql);
 
-<body>
-  <div class="container">
-    <div class="navbar">
-      <div class="logo">
-        <nav>
-          <ul>
-            <li><a
-                href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.php"><img
-                  src="assets/img/img/Shopee_Img/images/logoblack.png" width="200" alt="logo"></a></li>
-          </ul>
-        </nav>
-      </div>
-      <nav>
-        <ul id="MenuItems">
-          <li><a
-              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_front.php">Home</a>
-          </li>
-          <li><a
-              href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/products.php">Products</a>
-          </li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Account</a></li>
-        </ul>
-      </nav>
-      <img
-        href="http://127.0.0.1:5500/eindopdrachten-webshop-overzicht-bestelformulier-jaedyndant-main/shopee_cart.php"
-        src="assets/img/img/Shopee_Img/images/cart.png" width="30" height="30">
-      <img src="assets/img/img/Shopee_Img/images/menu.png" class="menu-icon" onclick="menutoggle()">
-    </div>
-  </div>
-
-
-
-
-
-
-  <!-- ----foooter------------------------------>
-
-
-  <?php include 'Templates/footer.php'; ?>
-
-  <script>
-    function menutoggle() {
-      var MenuItems = document.getElementById("MenuItems");
-
-      if (MenuItems.style.maxHeight === "0px") {
-        MenuItems.style.maxHeight = "200px";
-      } else {
-        MenuItems.style.maxHeight = "0px";
-      }
+    if ($result) {
+        echo "Data inserted successfully";
+    } else {
+        echo "Error: " . mysqli_error($con);
     }
-  </script>
+}
+?>
+
+
+?>
+
+<?php include 'Templates/header.php'; ?>
+
+<style>
+  /* Center the login form */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    /* Adjust for header height */
+  }
+
+  /* Style the login form */
+  .login-form {
+    width: 300px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style the form elements */
+  .login-form input[type="text"],
+  .login-form input[type="password"],
+  .login-form input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .login-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+
+  .login-form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+
+<div class="login-container">
+  <div class="login-form">
+    <h2>Login</h2>
+    <form action="shopee_account.php" method="post">
+      <label for="username_email">Username/Email:</label><br>
+      <input type="text" id="username_email" name="username_email" placeholder="Enter username or email" name='username' required><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" placeholder="Enter password" name='password' required><br>
+
+      <input type="submit" value="Login">
+    </form>
+
+    <p>Don't have an account? <a href="signup.php">Sign up</a></p>
+  </div>
+</div>
+
+
+<footer>
+  <?php include 'Templates/footer.php'; ?>
+</footer>
+
+<script>
+  function menutoggle() {
+    var MenuItems = document.getElementById("MenuItems");
+
+    if (MenuItems.style.maxHeight === "0px") {
+      MenuItems.style.maxHeight = "200px";
+    } else {
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+</script>
+
 </body>
 
 </html>
