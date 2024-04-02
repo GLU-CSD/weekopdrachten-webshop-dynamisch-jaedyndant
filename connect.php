@@ -1,12 +1,14 @@
 <?php
+
 $hostname = 'localhost';
 $username = 'root';
-$password = '123'; 
+$password = ''; 
 $database = 'signupforms';
 
 $con = mysqli_connect($hostname, $username, $password, $database);
 
-if (!$con) {
+
+if ($con) {
     echo "Connected successfully";
 } else {
     die(mysqli_error($con));

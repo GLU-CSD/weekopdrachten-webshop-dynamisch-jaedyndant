@@ -1,22 +1,28 @@
 <?php
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     include 'connect.php';
+    
+    // print_r( $_POST );
     $username = $_POST["username"];
     $password = $_POST["password"];
+    
 
     $sql = "INSERT INTO registration (username, password) VALUES ('$username', '$password')";
     $result = mysqli_query($con, $sql);
+   
 
     if ($result) {
-        echo "Data inserted successfully";
+        echo "Data inserted successfully"; 
     } else {
         echo "Error: " . mysqli_error($con);
+        
     }
 }
 ?>
 
 
-?>
+
 
 <?php include 'Templates/header.php'; ?>
 
@@ -67,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <h2>Login</h2>
     <form action="shopee_account.php" method="post">
       <label for="username_email">Username/Email:</label><br>
-      <input type="text" id="username_email" name="username_email" placeholder="Enter username or email" name='username' required><br>
+      <input type="text" id="username" name="username" placeholder="Enter username " name='username' required><br>
 
       <label for="password">Password:</label><br>
       <input type="password" id="password" name="password" placeholder="Enter password" name='password' required><br>
