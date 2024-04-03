@@ -29,8 +29,8 @@
 
   <?php include 'Templates/header.php'; ?>
 
-  <img href="shopee_cart.php" src="assets/img/img/Shopee_Img/images/cart.png" width="30" height="30">
-  <img src="assets/img/img/Shopee/images/menu.png" class="menu-icon" onclick="togglemenu()"> <!--docent vraag-->
+  
+  <img src="assets/img/img/Shopee/images/menu.png" class="menu-icon" onclick="togglemenu()"> 
   </div>
   <div class="row">
     <div class="col-2">
