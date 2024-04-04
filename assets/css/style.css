@@ -41,6 +41,7 @@ p{
    align-items: center;
    flex-wrap: wrap;
    justify-content: space-around;
+   padding-top: 150px;
   
  }
  .col-2{
@@ -556,6 +557,7 @@ th:last-child{
 
 
 
+
 /*----------------------order form----------------------------------------------------*/
 
 
@@ -624,7 +626,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
-
+.single-product input.order-btn{
+  width: 60%;
+}
 
 
 

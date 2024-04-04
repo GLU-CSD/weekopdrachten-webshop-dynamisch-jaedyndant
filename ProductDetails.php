@@ -16,19 +16,15 @@
         <div class="col-2 image-col">
           <div class="smallimg">
             <?php foreach ($product['images'] as $smallimg) : ?>
-              <img class='smimg'src="<?php echo $smallimg; ?>" alt="Small Image">
+              <img class='smimg' src="<?php echo $smallimg; ?>" alt="Small Image">
             <?php endforeach; ?>
           </div>
           <img src="<?php echo $product['image']; ?>" alt="Product Image">
         </div>
         <div class="col-2">
           <h1><?php echo $product['name']; ?></h1>
-
-
-
           <a href="ProductDetails.php?id=<?php echo $product['id'] ?>">
             <div class="col-2">
-
               <div class="rating">
                 <?php for ($i = 0; $i < $product['rating']; $i++) : ?>
                   <i class="fa-solid fa-star"></i>
@@ -40,28 +36,33 @@
               </div>
             </div>
           </a>
+          <form action="shopee_cart.php" method="post">
+
+      <select name= 'size'> 
+        
+        <option>35 EU</option>
+        <option>36 EU</option>
+        <option>37 EU</option>
+        <option>38 EU</option>
+        <option>39 EU</option>
+        <option>40 EU</option>
+        <option>41 EU</option>
+        <option>42 EU</option>
+        <option>43 EU</option>
+      </select>
+      <input type="number" value="1" name='amount'>
+      <input type="submit" value="Add To Cart" class='order-btn' name='add_to_cart'>
+      <input type="hidden" name= 'id' value='<?php echo $product['id'] ?>'>
+        </div>
+        </form>
+
         <?php } ?>
       <?php endforeach; ?>
 
+      
 
-      <select>
-        <option>35 EUR</option>
-        <option>36 EUR</option>
-        <option>37 EUR</option>
-        <option>38 EUR</option>
-        <option>39 EUR</option>
-        <option>40 EUR</option>
-        <option>41 EUR</option>
-        <option>42 EUR</option>
-        <option>43 EUR</option>
-      </select>
-      <input type="number" value="1">
-      <a href="shopee_cart.php" Class="btn"> Add To Cart</a>
-
-
-        
-    </div>
   </div>
+</div>
 </div>
 
 <?php

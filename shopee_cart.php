@@ -1,140 +1,87 @@
-
-<?php
-if (isset($_POST['add_to_cart'])) {
-  $product_id = $_POST['product_id'];
-  $product_name = $_POST['product_name'];
-  $product_price = $_POST['product_price'];
-  $product_quantity = $_POST['product_quantity'];
-
-  // Add product to cart
-  $_SESSION['cart'][] = array(
-    'id' => $product_id,
-    'name' => $product_name,
-    'price' => $product_price,
-    'quantity' => $product_quantity
-  );
-}
-
-?>
-<!doctype html>
-<html class="no-js" lang="en">
-
 <?php include 'Templates/header.php'; ?>
 
 <?php
+
 session_start();
-
-// Check if the product is added to cart
 if (isset($_POST['add_to_cart'])) {
-  $product_id = $_POST['product_id'];
-  $product_name = $_POST['product_name'];
-  $product_price = $_POST['product_price'];
-  $product_quantity = $_POST['product_quantity'];
-
-  // Add product to cart
-  $_SESSION['cart'][] = array(
-    'id' => $product_id,
-    'name' => $product_name,
-    'price' => $product_price,
-    'quantity' => $product_quantity
-  );
+  $product_id = $_POST['id'];
+  $product_quantity = $_POST['amount'];
+  $product_size = $_POST['size'];
 }
+// Add product to cart
+$_SESSION['cart'][$product_id] = array(
+  'id' => $product_id,
+  'quantity' => $product_quantity,
+  'size' => $product_size,
+);
 
-// Function to calculate total price of items in cart
-function calculate_total_price($cart)
-{
-  $total_price = 0;
-  foreach ($cart as $item) {
-    $total_price += $item['price'] * $item['quantity'];
-  }
-  return $total_price;
-}
+// echo '<pre>';
+// print_r($_SESSION['cart']);
+// echo '</pre>';
 
-// Remove item from cart
-if (isset($_GET['remove'])) {
-  $index = $_GET['remove'];
-  unset($_SESSION['cart'][$index]);
-  header('Location: cart.php');
-  exit();
-}
+$Items_in_cart = array_keys($_SESSION['cart']);
+
+// session_destroy();
+
 ?>
-
-<!-----------cart items------->
 <div class="small-container cart-page">
-
   <table>
     <tr>
+      <th>image</th>
       <th>Products</th>
       <th>Quantity</th>
+      <th>price</th>
       <th>Subtotal</th>
     </tr>
-    <tr>
-      <td>
+    <?php
+    include_once 'productsarray.php';
+    foreach ($all_products as $product) {
+      if (in_array($product['id'], $Items_in_cart)) {
 
-        <div class="cart-info">
-          <img src="assets/img/img/Shopee_Img/images/product1.jpg" alt="Nike SB Pigeon Dunks" width="400" height="450">
-          <div>
-            <p>Nike SB Pigeon Dunks</p>
-            <small>Price: $799.99</small>
-            <br>
-            <a href="">Remove</a>
-          </div>
-        </div>
+        echo '<tr>
+                  <td>
+      
+                      <img src="assets/img/img/Shopee_Img/images/' . $product['image'] . '" alt="' . $product['name'] . '" width="150" height="100">
+                  </td>
+                  <td>'.$product['name']. '<br>'.$_SESSION ['cart'][$product['id']]['size'].'
+                  </td>
+                  <td>'.$_SESSION ['cart'][$product['id']]['quantity'].'
+                  </td>
+                  <td>'.$product['price'].'
+                  </td>
+                  <td>$' . ($product['price'] * $_SESSION['cart'][$product['id']]['quantity']) . 
+                  '</td>  
+                  <br>
+                 <a href="?remove=' . $product['id'] . '">Remove</a> 
+                </tr>';
+                
 
-      </td>
-      <td><input type="number" value="1"></td>
-      <td>$799.99</td>
-    </tr>
-    <tr>
-      <td>
+      }
+    }
 
-        <div class="cart-info">
-          <img src="assets/img/img/Shopee_Img/images/product2.jpg" alt="Jordan 1 Low Travis Scott Black Phantom" width="400" height="450">
-          <div>
-            <p>Jordan 1 Low Travis Scott Black Phantom</p>
-            <small>Price: $559.99</small>
-            <br>
-            <a href="">Remove</a>
-          </div>
-        </div>
 
-      </td>
-      <td><input type="number" value="1"></td>
-      <td>$559.99</td>
-    </tr>
-    <tr>
-      <td>
-
-        <div class="cart-info">
-          <img src="assets/img/img/Shopee_Img/images/product3.jpg" alt="Nike SB Dunk Low Mummy Halloween" width="400" height="450">
-          <div>
-            <p>Nike SB Dunk Low Mummy Halloween</p>
-            <small>Price: $335.99</small>
-            <br>
-            <a href="">Remove</a>
-          </div>
-        </div>
-
-      </td>
-      <td><input type="number" value="1"></td>
-      <td>$335.99</td>
-    </tr>
+    // if (isset($_GET['remove'])) {
+    //   $index = $_GET['remove'];
+    //   unset($_SESSION['cart'][$index]);
+    //   header('Location: cart.php');
+    //   exit;
+    // }
+    // ?>
   </table>
 
   <div class="total-price">
-
     <table>
       <tr>
         <td>Sub Total</td>
-        <td>$1669.99</td>
+        <td id="sub-total"></td>
       </tr>
       <tr>
         <td>Tax</td>
-        <td>$35.00</td>
+        <td id="tax"></td>
       </tr>
       <tr>
         <td>Total</td>
-        <td>$1731.00</td>
+        <td id="total"></td>
       </tr>
       <tr>
         <td><a href="shopee_form.php" Class="btn"> Check Out</a></td>
@@ -143,25 +90,66 @@ if (isset($_GET['remove'])) {
   </div>
 </div>
 
-<!-- ----foooter------------------------------>
+<?php
+// include_once 'productsarray.php';
+// foreach ($all_products as $product) {
+//   if (in_array($product['id'], $Items_in_cart)) {
+
+//     echo '<tr>
+//                     <td>
+//                       <div class="cart-info">
+//                         <img src="assets/img/img/Shopee_Img/images/' . $product['image'] . '" alt="' . $product['name'] . '" width="150" height="100">
+//                         <div>
+//                           <p>' . $product['name'] . '</p>
+//                           <small>Price: $' . $product['price'] . '</small>
+//                           <br>
+//                           Quantity: <input type="number" value="' . $_SESSION['cart'][$product['id']]['quantity'] . '">
+//                           <br>
+//                           <a href="?remove=' . $product['id'] . '">Remove</a>
+//                         </div>
+//                       </div>
+//                     </td>
+//                     <td></td>
+//                     <td>$' . ($product['price'] * $_SESSION['cart'][$product['id']]['quantity']) . '</td>
+//                   </tr>';
+//   }
+// }
 
 
-<?php include 'Templates/footer.php'; ?>
+// Display message when cart is empty
+if (empty($Items_in_cart)) {
+  echo '<tr><td colspan="5">Your cart is empty.</td></tr>';
+}
+?>
 
-
-<!--------------scripts------------->
+<!doctype html>
+<html class="no-js" lang="en">
 
 <script>
   function menutoggle() {
-    var MenuItems = document.getElementById("MenuItems");
+    var MenuItems = document.getElementById("MenuItems")
 
     if (MenuItems.style.maxHeight === "0px") {
-      MenuItems.style.maxHeight = "200px";
+      MenuItems.style.maxHeight = "200px"
     } else {
-      MenuItems.style.maxHeight = "0px";
+      MenuItems.style.maxHeight = "0px"
     }
   }
 </script>
-</body>
+
+< <?php include 'Templates/footer.php'; ?> <script>
+  function calculateTotalPrice() {
+  var subTotal = 0;
+  var tax = 0;
+  var total = 0;
+
+  var cartItems = document.querySelectorAll('.cart-info');
+
+  for (var i = 0; i < cartItems.length; i++) { var cartItem=cartItems[i]; var price=parseFloat(cartItem.querySelector('.price span').innerText.replace('$', '' )); 
+      var quantity=parseFloat(cartItem.querySelector('input[type="number" ]').value); subTotal +=price * quantity; } tax=subTotal * 0.07; total=subTotal + tax; 
+      document.getElementById('sub-total').innerText='$' + subTotal.toFixed(2); document.getElementById('tax').innerText='$' + tax.toFixed(2); document.getElementById
+      ('total').innerText='$' + total.toFixed(2); } calculateTotalPrice(); </script>
+
+    </body>
 
 </html>

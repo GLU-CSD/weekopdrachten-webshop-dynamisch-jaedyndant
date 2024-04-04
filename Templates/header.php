@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -30,20 +29,22 @@
       <div class="container">
         <div class="navbar">
           <div class="logo">
-            <img src="assets/img/img/Shopee_Img/images/logowhite.png" width="200">
+            <a href="index.php">
+              <img src="assets/img/img/Shopee_Img/images/logowhite.png" width="200" alt="Logo">
+            </a>
           </div>
           <nav>
             <ul id="MenuItems">
-              <li><a href="index.php"">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li><a href="products.php">Products</a>
               </li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
               <li><a href="shopee_account.php">Account</a></li>
             </ul>
+            <a href="shopee_cart.php" class="cart"><i class="fa-solid fa-cart-shopping"></i><span><sup>2</sup></span></a>
           </nav>
           <!------------ shopping cart icon-------->
-          <a href="shopee_cart.php" class="cart"><i class="fa-solid fa-cart-shopping"></i><span><sup>2</sup></span></a>
           
+
   </header>
-  
