@@ -465,20 +465,20 @@ input:focus{
   margin: 80px auto;
 }
 table{
-  width: 100%;
+  width: 30%;
   border-collapse: collapse;
+  float: right;
 }
 .cart-info{
   display: flex;
   flex-wrap: wrap;
 }
 th{
-  text-align: left;
   padding: 5px;
   color:#6b6969f9;
-  background: #3bebff;
   font-weight: normal;
 }
+
 
 td {
   padding: 10px 5px;
@@ -493,11 +493,14 @@ td a{
   color:#3bebff;
   font-size: 12px;
 }
-td img{
-  width: 150px;
-  height: 120px;
-  margin-right: 10px;
+td img {
+  max-width: 20%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  float: right;
 }
+
 .cart-items {
   float: right;
   width: 50%; 
@@ -512,8 +515,13 @@ td img{
 .total-price table{
   border-top: 3px solid #3bebff;
   width: 100%;
-  max-width: 350px;
+  max-width: 425px;
 }
+
+.total-price td {
+  text-align: right;
+}
+
 td:last-child{
   text-align: right;
 }

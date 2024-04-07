@@ -74,38 +74,49 @@ if(empty($_SESSION['cart'])) {
     
             echo '</tr>';
 
-            // Call the calculateTotalPrice function after the cart items are displayed
-            echo "<script>calculateTotalPrice();</script>";
+          
         }
     }
 }
 ?>
 
-  </table>
+<?php
+// Calculate the subtotal for all products
+$subtotal = 0;
+foreach ($all_products as $product) {
+    if (in_array($product['id'], $Items_in_cart)) {
+        $product_subtotal = $product['price'] * $_SESSION['cart'][$product['id']]['quantity'];
+        $subtotal += $product_subtotal;
+    }
+}
+?>
 
-  <div class="total-price">
-    <table style="width:100%">
-      <tr>
-        <td style="width:50%">Sub Total</td>
-        <td style="width:50%" id="sub-total"></td>
-      </tr>
-      <tr>
-        <td>Tax</td>
-        <td id="tax"></td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td id="total"></td>
-      </tr>
-      <tr>
-        <td><a href="shopee_form.php" Class="btn"> Check Out</a></td>
-      </tr>
+<div class="total-price">
+  
+    <table>
+        <tr>
+            <td>Sub Total</td>
+            <td id="sub-total">$<?php echo number_format($subtotal, 2);?></td>
+        </tr>
+        <tr>
+            <td>Tax(21%)</td>
+            <td id="tax">$<?php echo number_format($subtotal * 0.21, 2);?></td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td id="total">$<?php echo number_format($subtotal * 1.21, 2);?></td>
+        </tr>
+        <tr>
+            <td colspan="2"><a href="shopee_form.php" class="btn">Check Out</a></td>
+        </tr>
     </table>
-  </div>
 </div>
 
 
+
 <?php include 'productsarray.php'; ?>
+
+
 
 
 <!--------------------product random 4---------->
@@ -134,51 +145,8 @@ if(empty($_SESSION['cart'])) {
 
 <?php include 'Templates/footer.php'; ?> 
 
-<script>
-  function calculateTotalPrice() {
-    var subTotal = 0;
-    var tax = 0;
-    var total = 0;
 
-    var cartItems = document.querySelectorAll('.cart-info');
-
-    for (var i = 0; i < cartItems.length; i++) {
-      var cartItem = cartItems[i];
-      var price = parseFloat(cartItem.querySelector('.price span').innerText.replace('$', ''));
-      var quantity = parseFloat(cartItem.querySelector('input[type="number"]').value);
-      subTotal += price * quantity;
-    }
-
-    tax = subTotal * 0.21;
-    total = subTotal + tax;
-
-    document.getElementById('sub-total').innerText = '$' + subTotal.toFixed(2);
-    document.getElementById('tax').innerText = '$' + tax.toFixed(2);
-    document.getElementById('total').innerText = '$' + total.toFixed(2);
-  }
-
-  // Call the calculateTotalPrice function when the page is loaded
-  window.onload = function() {
-    calculateTotalPrice();
-  };
-
-  // Call the calculateTotalPrice function when there is a change in the quantity input
-  var quantityInputs = document.querySelectorAll('input[type="number"]');
-
-  for (var i = 0; i < quantityInputs.length; i++) {
-    quantityInputs[i].addEventListener('change', function() {
-      calculateTotalPrice();
-    });
-  }
-
-  
-  function addToCart() {
-    
-
-    // After adding the product, recalculate total price
-    calculateTotalPrice();
-  }
-
+  <script>
   // Function to toggle menu
   function menutoggle() {
     var MenuItems = document.getElementById("MenuItems");
