@@ -3,6 +3,7 @@
 
 <?php include 'Templates/header.php'; ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +16,7 @@
 
     </style>
 </head>
-
+<?php include 'Templates/formcart.php'; ?>
 <body>
 
     <div class="container">
@@ -92,6 +93,7 @@
         </form>
     </div>
 
+   
 </body>
 
 </html>

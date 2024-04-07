@@ -41,7 +41,7 @@ p{
    align-items: center;
    flex-wrap: wrap;
    justify-content: space-around;
-   padding-top: 150px;
+   padding-top: 50px;
   
  }
  .col-2{
@@ -480,8 +480,9 @@ th{
   font-weight: normal;
 }
 
-td{
+td {
   padding: 10px 5px;
+  font-size: 15px; 
 }
 td input{
   width: 40px;
@@ -493,10 +494,17 @@ td a{
   font-size: 12px;
 }
 td img{
-  width: 100px;
+  width: 150px;
   height: 120px;
   margin-right: 10px;
 }
+.cart-items {
+  float: right;
+  width: 50%; 
+  margin-left: 5px; 
+}
+
+
 .total-price{
   display:flex;
   justify-content: flex-end;
@@ -582,39 +590,43 @@ input#mastercard{
 }
 
 
-  
-  .container {
+.container {
   max-width: 100%;
   margin: 0 auto;
   padding: 0px;
-  border: 1px solid #504f4f;
-  border-radius: 5px;
+  border: 1px solid #4f4f50;
+  
 }
+
 .form-group {
   margin-bottom: 15px;
-  align-items: center;
-  margin-left: 10px;
+  align-items: right;
+  margin-left: 0;
+  margin-right: 10px;
 }
+
 label {
-  
-  display: block;
+  display: inline-block;
   font-weight: bold;
   margin-bottom: 5px;
   font-family: "Century Gothic", sans-serif;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
 select {
-  width: 100%;
+  width: auto;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 input[type="checkbox"] {
   margin-right: 5px;
 }
+
 input[type="submit"] {
   background-color: #4CAF50;
   color: white;
@@ -623,14 +635,14 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
+
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+
 .single-product input.order-btn{
   width: 60%;
 }
-
-
 
 
 
@@ -665,4 +677,6 @@ input[type="submit"]:hover {
        .cart-info p{
         display:none;
        }
+     
+    
 }

@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+
   <header>
     <div class="header">
       <div class="container">
@@ -42,9 +42,9 @@
               <li><a href="">Contact</a></li>
               <li><a href="shopee_account.php">Account</a></li>
             </ul>
-            <a href="shopee_cart.php" class="cart"><i class="fa-solid fa-cart-shopping"></i><span><sup>2</sup></span></a>
+            <a href="shopee_cart.php" class="cart"><i class="fa-solid fa-cart-shopping"></i><span><sup></sup></span></a>
           </nav>
-          <!------------ shopping cart icon-------->
+         
           
 
   </header>
