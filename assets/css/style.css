@@ -37,11 +37,11 @@ p{
   padding-right: 25px;
 }
  .row{
-   display: flex;
+   display: inline-flex;
    align-items: center;
    flex-wrap: wrap;
    justify-content: space-around;
-   padding-top: 50px;
+   padding-top: 20px;
   
  }
  .col-2{
@@ -473,6 +473,28 @@ table{
   display: flex;
   flex-wrap: wrap;
 }
+.wrapper {
+  display: flex;
+  width: 40%; /* Center align content */
+}
+.cart-container {
+  text-align: left; /* Ensure text alignment to the left */
+}
+.total-price {
+  width: 20%; 
+  text-align: left;
+  margin-top: 20px; 
+}
+.total-price table {
+  width: 10%;
+}
+
+.cart-product-image {
+  width: 100px; 
+  height: auto; 
+  display: block; 
+  margin-bottom: 10px; 
+}
 th{
   padding: 5px;
   color:#6b6969f9;
@@ -531,6 +553,10 @@ th:last-child{
 .btn{
   color: #3bebff;
  
+}
+
+p{
+  font-size: 25px;
 }
 
 /*----------------login form-------------*/

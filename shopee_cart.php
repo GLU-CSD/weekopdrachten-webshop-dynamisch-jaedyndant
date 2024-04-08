@@ -84,11 +84,12 @@ if(empty($_SESSION['cart'])) {
 // Calculate the subtotal for all products
 $subtotal = 0;
 foreach ($all_products as $product) {
-    if (in_array($product['id'], $Items_in_cart)) {
+    if (in_array($product['id'], $Items_in_cart) && isset($_SESSION['cart'][$product['id']])) {
         $product_subtotal = $product['price'] * $_SESSION['cart'][$product['id']]['quantity'];
         $subtotal += $product_subtotal;
     }
 }
+
 ?>
 
 <div class="total-price">
@@ -120,7 +121,7 @@ foreach ($all_products as $product) {
 
 
 <!--------------------product random 4---------->
-<h2>Products you might be interested in !</h2>
+
 <div class="row">
   <?php
   $random_keys = array_rand($all_products, 4); 

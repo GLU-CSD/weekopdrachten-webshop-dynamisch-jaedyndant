@@ -1,5 +1,3 @@
-<!doctype html>
-<html class="no-js" lang="en">
 
 <?php include 'Templates/header.php'; ?>
 
@@ -16,12 +14,13 @@
 
     </style>
 </head>
-<?php include 'Templates/formcart.php'; ?>
+
 <body>
 
     <div class="container">
         <h2>Order Form</h2>
-        <form action="#" method="post">
+        <?php include 'Templates/formcart.php'; ?>
+        <form action="thankyou.php" method="post">
             <div class="form-group">
                 <label for="Gender">Gender</label>
                 <select id="Gender" name="Gender">
