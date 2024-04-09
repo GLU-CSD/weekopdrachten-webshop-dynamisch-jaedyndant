@@ -1,5 +1,4 @@
-<?php
-session_start();
+<!-- <?php
 include_once 'productsarray.php';
 
 ?>
@@ -17,8 +16,9 @@ include_once 'productsarray.php';
     <div class="wrapper">
         <div class="cart-container">
             <?php
-            foreach ($_SESSION['cart'] as $cart_product_id => $cart_product) {
-                foreach ($all_products as $product) {
+            foreach ($all_products as $product){
+            foreach ($_SESSION['cart'] as $cart_product_id => $cart_product) 
+                 {
                     if ($product['id'] == $cart_product_id) {
                         echo '<div class="cart-product">';
                         echo '<img class="cart-product-image" src="' . $product['image'] . '" alt="' . $product['name'] . '">';
@@ -29,9 +29,13 @@ include_once 'productsarray.php';
                     }
                 }
             }
-            ?>
+        
+             ?>
+            
+            
         </div>
-    </div>
+    
+ 
     <?php
     // Calculate the subtotal for all products
     $subtotal = 0;
@@ -62,4 +66,4 @@ include_once 'productsarray.php';
 
 </body>
 
-</html>
+</html> -->

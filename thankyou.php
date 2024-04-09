@@ -1,5 +1,9 @@
 <?php include 'Templates/header.php'; ?>
+<?php
+session_start();
 
+
+?>
 
 <?php include 'productsarray.php';?>
 

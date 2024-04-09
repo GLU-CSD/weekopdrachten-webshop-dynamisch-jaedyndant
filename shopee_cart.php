@@ -35,8 +35,8 @@ $Items_in_cart = array_keys($_SESSION['cart']);
     </tr>
 
     
-    <?php
-include_once 'productsarray.php';
+</div>  
+<?php include_once 'productsarray.php';
 
 // Check if a product needs to be removed
 if(isset($_GET['remove']) && isset($_SESSION['cart'][$_GET['remove']])) {
